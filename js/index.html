@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    html body{
+        background-color: #aaaaaa;
+    }
+
+    #confirmp{
+        width: 300px;
+        background-color: red;
+        font-size: 15px;
+    }
+
+</style>
+<body>
+    <input type="button" value="点击弹出alert对话框" onclick="alertone()">
+    <p id="confirmid" class="confirmclass">confirm消息对话框</p>
+    <input type="button" value="点击弹出confirm 消息对话框" onclick="confirmone()"><br>
+    <input type="button" value="点击弹出prompt消息对话框" onclick="promptone()"><br>
+    <input type="button" value="打开新窗口" onclick="openWindow()"><br>
+    <input type="button" value="新窗口打开网站" onclick="openWindows()"><br>
+    <input type="button" value="隐藏按钮" onclick="displaynone()"><br>
+    <input type="button" value="显示按钮" onclick="displayblock()">
+    <p id="confirmp" onclick="confirmtwo()">取消设置</p>
+    <p onclick="styleonc()">添加样式</p>
+    <p onclick="classNameone()">改变类名</p>
+    <script src="jsone.js"></script>
+</body>
+
+</html>
