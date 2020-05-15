@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 200px; 
+        color: red;
+    }
+
+    #displaydiv{
+        display: none;
+    }
+</style>
+<body>
+    <p>js深入浅出</p>
+    <div id="typediv" onmousedown="mousedown_type()" onmousemove="mousemove()" onmouseout="mouseout()">
+        <p>七种数据类型</p>
+    </div>
+
+    <div id="yinsdiv" onmousemove="mousemove_yinsdiv()" onmouseout="mouseout_yinsdiv()">
+        <p>js隐式转换</p>
+    </div>
+
+    <div id="typeofdiv" onmousemove="mousemove_typeofdiv()" onmouseout="mouseout_typeofdiv()">
+        <p>类型检测</p>
+    </div>
+
+    <div>
+        <p onmousedown="onmousedown_yuns()">运算符</p>
+        <div id="displaydiv">
+            <img src="运算符1.png">
+            <img src="运算符2.png">
+        </div>
+    </div>
+
+    <div>
+        <p onmousedown="mousedown_define()">Object.defineProperty</p>
+    </div>
+
+    <p id="trycatch"></p>
+    <p id="keys"></p>
+    <script>
+        
+
+        
+    </script>
+    <script src="JS3.js"></script>
+</body>
+</html>
