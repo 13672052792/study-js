@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .left,
+    .right {
+        width: 300px;
+        height: 120px;
+    }
+    
+    .left div,
+    .right div {
+        width: 100px;
+        height: 90px;
+        padding: 5px;
+        margin: 5px;
+        float: left;
+        border: 1px solid #ccc;
+    }
+    
+    .left div {
+        background: #bbffaa;
+    }
+    
+    .right div {
+        background: yellow;
+    }
+    
+    .div2 p {
+        color: rebeccapurple;
+    }
+    
+    .aaron {
+        border: 1px solid red;
+    }
+
+    .empty,.detach{
+        height: 50px;
+        width: 100px;
+        background-color: darkcyan;
+    }
+</style>
+
+<body>
+    <h2>动态创建元素节点</h2>
+    <div class="left">
+        <div class="aaron">点击区域会动态append()创建元素节点</div>
+    </div>
+    <div class="rightone">
+        <div class="aaron">点击区域会动态prepend()创建元素节点</div>
+    </div>
+
+    <div class="div2">
+        <p>动态创建p</p>
+    </div>
+
+    <div class="aaron">
+        <p class="test1">测试before</p>
+    </div>
+    <div class="aaron">
+        <p class="test2">测试after</p>
+    </div>
+
+    <div class="empty">
+        <p>empty内容</p>
+    </div>
+
+    <div class="detach">
+        <p>detach内容</p>
+    </div>
+
+    <input id="input2" type="button" value="动态创建-before">
+    <input id="input3" type="button" value="动态创建-after">
+    <input class="input_" type="button" value="点击动态创建p标签">
+    <input class="input4" type="button" value="点击删除empty"><br>
+    <input id="input5" type="button" value="detach保留删除">
+    <input class="input5_" type="button" value="调用detach已删除内容">
+    <input class="input6" type="button" value="拷贝">
+    <input id="input7" type="button" value="点击replace删除并替换内容">
+    <script src=".././jquery-1.12.4.min.js"></script>
+    <script src="jq2.js"></script>
+</body>
+
+</html>

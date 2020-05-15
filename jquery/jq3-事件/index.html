@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+
+    div{
+        width:300px;
+        height: 150px;
+        background-color: lemonchiffon; 
+        overflow-y: auto;
+        float: left;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .divcss{
+        width:300px;
+        height: 150px;
+        background-color: lightcoral; 
+        overflow-y: auto;
+        float: left;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+</style>
+<body>
+    <h1>jq3-事件</h1>
+    <div id="click_">
+        <p>click与dbclick</p>
+        <p>点击增加内容</p>
+    </div>
+
+    <div id="mousedown_">
+        <p>mousedowm与mouseup</p>
+        <p>鼠标点击松开</p>
+    </div>
+
+    <div id="mousemove_">
+        <p>mousemove</p>
+        <p>鼠标移动</p>
+    </div>
+
+    <div id="mouseover_">
+        <p>mouseover与mouseout</p>
+        <p>鼠标移入/移出(冒泡)</p>
+        <p><a>冒泡触发次数：</a></p>
+    </div>
+
+    <div id="mouseenter_">
+        <p>mouseenter与mouseleave</p>
+        <p>鼠标移入/移出（不冒泡）</p>
+        <p><a>冒泡触发次数：</a></p>
+    </div>
+
+    <div id="hover_">
+        <p>hover</p>
+        <p>便捷处理鼠标移入/移出（不冒泡）</p>
+        <p><a>冒泡触发次数：</a></p>
+    </div>
+    <script src="..\jquery-1.12.4.min.js"></script>
+    <script src="jq3.js"></script>
+</body>
+</html>

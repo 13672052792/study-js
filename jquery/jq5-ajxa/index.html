@@ -1,0 +1,88 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title></title>
+    </head>
+    
+    <body>
+        <div id="divtest">
+            <div class="title">
+                <span class="fl">我最爱吃的水果</span> 
+                <span class="fr">
+                    <input id="htmlShow" type="button" value="加载" />
+                </span>
+            </div>
+            <ul></ul>
+        </div>
+
+        <div id="divjson">
+            <div class="title">
+                <span class="fl">我最喜欢的一项运</span> 
+                <span class="fr">
+                    <input id="jsonShow" type="button" value="加载" />
+                </span>
+            </div>
+            <ul></ul>
+        </div>
+
+        <div id="divScript">
+            <div class="title">
+                <span class="fl">我最喜欢的一项运</span> 
+                <span class="fr">
+                    <input id="ScriptShow" type="button" value="加载" />
+                </span>
+            </div>
+            <ul></ul>
+        </div>
+
+        <div id="divget">
+            <div class="title">
+                <span class="fl">我最喜欢的一项运</span> 
+                <span class="fr">
+                    <input id="getShow" type="button" value="加载" />
+                </span>
+            </div>
+            <ul></ul>
+        </div>
+
+        <div id="divpost">
+            <div class="title">
+                <span class="fl">检测数字是否大于0</span> 
+                <span class="fr"><input id="postCheck" type="button" value="检测" /></span>
+            </div>
+            <ul>
+               <li>请求输入一个数字 <input id="txtNumber" type="text" size="12" /></li>
+            </ul>
+        </div>
+
+        <div id="divser">
+            <div class="title">
+                <span class="fl">我的个人资料</span> 
+                <span class="fr">
+                    <input id="serAction" type="button" value="序列化" />
+                </span>
+            </div>
+            <form action="">
+            <ul>
+                <li>姓名：<input name="Text1" type="text" size="12" /></li>
+                <li>
+                    <select name="Select1">
+                        <option value="0">男</option>
+                        <option value="1">女</option>
+                    </select>
+                </li>
+                <li><input name="Checkbox1" type="checkbox" />资料是否可见 </li>
+                <li id="litest"></li>
+            </ul>
+            </form>
+        </div>
+        <script src="../jquery-1.12.4.min.js"></script>
+        <script src="jq5.js"></script>
+        <script>
+            function jsonp(json){
+                alert(json["name"]);
+            }
+        </script>
+        <script src="C:\Users\Administrator\Desktop\studys\study\jquery\jq5-ajxa\Data\jq.json"></script>
+    </body>
+</html>
